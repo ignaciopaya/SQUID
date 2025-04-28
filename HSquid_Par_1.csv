@@ -1,0 +1,48 @@
+First Year;Fyear;2000
+Last Year;Lyear;2021
+Longevity;Longv;2.5
+Fecundity;Fec;192410148
+Natural Mortality CV;M_cv;0
+Growth Model;gm;1
+gm parameter 1;a_expo;309.11
+gm parameter 2;b_expo;0.0029
+gm parameter 3;t0;0
+Growth Model CV;CVGrowth;0.05
+Allometric Parameter;a;0.000023067
+Allometric Parameter;b;3.077
+Maturity Function;lm50;80
+Maturity Function;lmrange;10
+Seasonal Recruitment Patten;RSeason;1
+RSeason Standard Deviation;SdSeason;0
+Spawing Biomass;SB0;1.00E+07
+S/R Model;SRModel;1
+Steepness;h;0.6
+Sd recruitment before t1;prev.rsigma;0
+Recruitment Sd ;rsigma;0.1
+Fleet 1 Fishing Mortality;Fref1;0.1
+Fleet 1  Selectivity Par1;as1;0.15
+Fleet 1  Selectivity Par2;bs1;0.5
+Fleet 1  Selectivity Par3;cs1;0.15
+Fleet 2 Fishing Mortality;Fref2;0.05
+Fleet 2 Selectivity Par1;as2;0.15
+Fleet 2 Selectivity Par2;bs2;0.9
+Fleet 2 Selectivity Par3;cs2;0.15
+Fleet 3 Fishing Mortality;Fref3;0.05
+Fleet 3 Selectivity Par1;as3;0.2
+Fleet 3 Selectivity Par2;bs3;0.7
+Fleet 3 Selectivity Par3;cs3;0.15
+Fleet 1 q;q1;0.0001
+Fleet 1 Hyper;hyp1;0.8
+Fleet 2 q;q2;0.00015
+Fleet 2 Hyper;hyp2;0.9
+Fleet 3 q;q3;0.00015
+Fleet 3 Hyper;hyp3;0.6
+Acous 1  Selectivity Par1;as4;5
+Acous 1  Selectivity Par2;bs4;6
+Acous 1  Selectivity Par3;cs4;500
+Acous 2  Selectivity Par1;as5;6
+Acous 2  Selectivity Par2;bs5;5
+Acous 2  Selectivity Par3;cs5;20
+Acous 1;qacous1;0.9
+Acous 2;qacous2;0.5
+MPH;qMPH;0.9

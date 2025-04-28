@@ -1,0 +1,29 @@
+First Year,Fyear,2000
+Last Year,Lyear,2021
+Longevity,Longv,1.5
+Natural Mortality,M_Annual,1.5
+Natural Mortality CV,M_cv,0
+Growth Model,gm,1
+gm parameter 1,a_expo,309.11
+gm parameter 2,b_expo,0.0029
+gm parameter 3,t0,0
+Growth Model CV,CVGrowth,0.05
+Allometric Parameter,a,0.000023067
+Allometric Parameter,b,3.077
+Maturity Function,lm50,80
+Maturity Function,lmrange,10
+Seasonal Recruitment Patten,RSeason,1
+RSeason Standard Deviation,SdSeason,0
+Spawing Biomass,SB0,1.00E+07
+S/R Model,SRModel,1
+Steepness,h,0.9
+Sd recruitment before t1,prev.rsigma,0
+Recruitment Sd ,rsigma,0
+Fleet 1 Fishing Mortality,Fref1,0
+Fleet 1  Selectivity Par1,as1,0
+Fleet 1  Selectivity Par2,bs1,0
+Fleet 1  Selectivity Par3,cs1,0
+Fleet 2 Fishing Mortality,Fref2,0
+Fleet 2 Selectivity Par1,as2,0
+Fleet 2 Selectivity Par2,bs2,0
+Fleet 2 Selectivity Par3,cs2,0

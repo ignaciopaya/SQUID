@@ -1,0 +1,58 @@
+Number of bins by year;nbin;12
+Number of length sizes;nls;100
+First Year;Fyear;2000
+Last Year;Lyear;2030
+Longevity;Longv;2
+Fecundity;Fec;192410148
+Natural Mortality CV;M_cv;0
+Growth Model;gm;1
+gm parameter 1;gm_a;309.11
+gm parameter 2;gm_b;0.0029
+gm parameter 3;gm_c;0
+Growth Model CV;CVGrowth;0.05
+Allometric Parameter;a;0.000023067
+Allometric Parameter;b;3.077
+Maturity Function;im50;1.8
+Maturity Function;imrange;0.02
+Seasonal Recruitment Patten;RSeason;4
+RSeason Standard Deviation;SdSeason;0
+Spawing Biomass;SB0;1.00E+07
+S/R Model;SRModel;2
+Steepness;h;0.7
+Shephed c;she_c;1.2
+Sd recruitment before t1;prev.rsigma;0
+Recruitment Sd ;rsigma;0
+Fleet 1 Fishing Mortality;Fref1;0.1
+Fleet 1  Selectivity Par1;as1;0.15
+Fleet 1  Selectivity Par2;bs1;0.5
+Fleet 1  Selectivity Par3;cs1;0.14
+Fleet 2 Fishing Mortality;Fref2;0.05
+Fleet 2 Selectivity Par1;as2;0.15
+Fleet 2 Selectivity Par2;bs2;0.9
+Fleet 2 Selectivity Par3;cs2;0.17
+Fleet 3 Fishing Mortality;Fref3;0.1
+Fleet 3  Selectivity Par1;as3;0.15
+Fleet 3  Selectivity Par2;bs3;0.5
+Fleet 3  Selectivity Par3;cs3;0.18
+Fleet 4 Fishing Mortality;Fref4;0.05
+Fleet 4 Selectivity Par1;as4;0.15
+Fleet 4 Selectivity Par2;bs4;0.9
+Fleet 4 Selectivity Par3;cs4;0.15
+Fleet 1 q;q1;0.0001
+Fleet 1 Hyper;hyp1;0.8
+Fleet 2 q;q2;0.00015
+Fleet 2 Hyper;hyp2;0.9
+Fleet 3 q;q3;0.0001
+Fleet 3 Hyper;hyp3;0.8
+Fleet 4 q;q4;0.00015
+Fleet 4 Hyper;hyp4;0.9
+Acous 1  Selectivity Par1;as5;5
+Acous 1  Selectivity Par2;bs5;6
+Acous 1  Selectivity Par3;cs5;500
+Acous 2  Selectivity Par1;as6;6
+Acous 2  Selectivity Par2;bs6;5
+Acous 2  Selectivity Par3;cs6;20
+Acous 1;qacous1;0.9
+Acous 2;qacous2;0.5
+MPH;qMPH;0.9
+Print short;shortprint;1

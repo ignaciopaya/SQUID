@@ -1,0 +1,265 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={COMPARISON OF DIFFERENT SQUID SIMULATIONS},
+  pdfauthor={Ignacio Payá, IFOP.},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{COMPARISON OF DIFFERENT SQUID SIMULATIONS}
+\author{Ignacio Payá, IFOP.}
+\date{mayo 26, 2024}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\hypertarget{section}{%
+\subparagraph{}\label{section}}
+
+\hypertarget{summary}{%
+\section{SUMMARY}\label{summary}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+This report was developed in rmakdown to compare results of different
+cases of Humboldt Squid Stock simulations. It collects the output files
+of ``Run HSquid\_Rmd.R'' script. The parameters by cases are shown in
+tables and the main variables (recruitments, biomass, fishing
+selectivity, catches, etc.) are shown in graphs.
+
+\hypertarget{introduction}{%
+\section{INTRODUCTION}\label{introduction}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+The `HSquid\_Html.rmd' rmardwon script was developed to simulate
+Humboldt Squid Stock dynamics using an input parameter file named
+HSquid\_Par.csv.
+
+The `Run HSquid\_Rmd.R' R script was written to conduct different
+simulation by means of run `HSquid\_Html.rmd' with different input
+parameters and to save parameters and main results in csv format file
+and graphs in png format files.
+
+Therefore, it was neccesary to write a rmarkdown script to report on the
+different simulations outputs (`Run Squid Rmd.R').
+
+\hypertarget{methods}{%
+\section{METHODS}\label{methods}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+No calculations were done in this script. The figures and tables are
+read from the current folder.
+
+The individual, population and fishery parameters are shown in tables 1
+to 3.
+
+\hypertarget{section-1}{%
+\subparagraph{}\label{section-1}}
+
+\hypertarget{results}{%
+\section{RESULTS}\label{results}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{table-1.-individual-parameters-by-case.}{%
+\subsection{Table 1. Individual Parameters by
+case.}\label{table-1.-individual-parameters-by-case.}}
+
+\begin{longtable}[]{@{}rrrrrrr@{}}
+\toprule\noalign{}
+Case & a\_expo & b\_expo & a & b & lm50 & lmrange \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & 309.11 & 0.0029 & 2.31e-05 & 3.077 & 80 & 10 \\
+2 & 309.11 & 0.0029 & 2.31e-05 & 3.077 & 80 & 10 \\
+3 & 309.11 & 0.0029 & 2.31e-05 & 3.077 & 80 & 10 \\
+\end{longtable}
+
+\hypertarget{table-2.-season-recruitment-parameters-by-case.}{%
+\subsection{Table 2. Season Recruitment Parameters by
+case.}\label{table-2.-season-recruitment-parameters-by-case.}}
+
+\begin{longtable}[]{@{}rrr@{}}
+\toprule\noalign{}
+Case & RSeason & SdSeason \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & 1 & 0 \\
+2 & 3 & 0 \\
+3 & 3 & 0 \\
+\end{longtable}
+
+\hypertarget{table-3.-population-parameters-by-case.}{%
+\subsection{Table 3. Population Parameters by
+case.}\label{table-3.-population-parameters-by-case.}}
+
+\begin{longtable}[]{@{}rrrrrrrrr@{}}
+\toprule\noalign{}
+Case & M\_Annual & M\_bin & M\_cv & SB0 & SRModel & h & prev.rsigma &
+rsigma \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & 1.5 & 0.125 & 0 & 1e+07 & 1 & 0.9 & 0.0 & 0.0 \\
+2 & 1.5 & 0.125 & 0 & 1e+07 & 1 & 0.9 & 0.0 & 0.0 \\
+3 & 1.5 & 0.125 & 0 & 1e+07 & 1 & 0.9 & 0.1 & 0.1 \\
+\end{longtable}
+
+\hypertarget{table-4.-fishery-parameters-by-case.}{%
+\subsection{Table 4. Fishery Parameters by
+case.}\label{table-4.-fishery-parameters-by-case.}}
+
+\begin{longtable}[]{@{}rrrrrrrrr@{}}
+\toprule\noalign{}
+Case & Fref1 & as1 & bs1 & cs1 & Fref2 & as2 & bs2 & cs2 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & 0.0 & 0.00 & 0.0 & 0.00 & 0.0 & 0.00 & 0.0 & 0.00 \\
+2 & 0.1 & 0.15 & 0.4 & 0.15 & 0.1 & 0.15 & 0.8 & 0.15 \\
+3 & 0.2 & 0.15 & 0.5 & 0.15 & 0.1 & 0.15 & 0.9 & 0.15 \\
+\end{longtable}
+
+\hypertarget{figure-1.-n-at-first-month-by-case.}{%
+\subsection{Figure 1. N at first Month by
+case.}\label{figure-1.-n-at-first-month-by-case.}}
+
+\includegraphics{CasesFig_N1.png}
+
+\hypertarget{figure-2.-recruitment-by-case.}{%
+\subsection{Figure 2. Recruitment by
+case.}\label{figure-2.-recruitment-by-case.}}
+
+\includegraphics{CasesFig_R.png}
+
+\hypertarget{figure-3.-whole-biomass-by-case.}{%
+\subsection{Figure 3. Whole Biomass by
+case.}\label{figure-3.-whole-biomass-by-case.}}
+
+\includegraphics{CasesFig_BT.png}
+
+\hypertarget{figure-4.-spawning-biomass-by-case.}{%
+\subsection{Figure 4. Spawning Biomass by
+case.}\label{figure-4.-spawning-biomass-by-case.}}
+
+\includegraphics{CasesFig_SBT.png}
+
+\hypertarget{figure-5.-stock-versus-recruitment-by-case.}{%
+\subsection{Figure 5. Stock versus Recruitment by
+case.}\label{figure-5.-stock-versus-recruitment-by-case.}}
+
+\includegraphics{CasesFig_SB_R.png}
+
+\hypertarget{figure-6.-fleet-1-selectivity-by-case.}{%
+\subsection{Figure 6. Fleet 1 Selectivity by
+case.}\label{figure-6.-fleet-1-selectivity-by-case.}}
+
+\includegraphics{CasesFig_S1.png}
+
+\hypertarget{figure-7.-fleet-2-selectivity-by-case.}{%
+\subsection{Figure 7. Fleet 2 Selectivity by
+case.}\label{figure-7.-fleet-2-selectivity-by-case.}}
+
+\includegraphics{CasesFig_S2.png}
+
+\hypertarget{figure-8.-fleet-1-catch-tons-by-case.}{%
+\subsection{Figure 8. Fleet 1 Catch (tons) by
+case.}\label{figure-8.-fleet-1-catch-tons-by-case.}}
+
+\includegraphics{CasesFig_YT1.png}
+
+\hypertarget{figure-9.-fleet-2-catch-tons-by-case.}{%
+\subsection{Figure 9. Fleet 2 Catch (tons) by
+case.}\label{figure-9.-fleet-2-catch-tons-by-case.}}
+
+\includegraphics{CasesFig_YT2.png}
+
+\hypertarget{figure-8.-whole-catch-tons-by-case.}{%
+\subsection{Figure 8. Whole Catch (tons) by
+case.}\label{figure-8.-whole-catch-tons-by-case.}}
+
+\includegraphics{CasesFig_YT.png}
+
+\end{document}

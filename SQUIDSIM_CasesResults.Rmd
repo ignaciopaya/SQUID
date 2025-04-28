@@ -1,0 +1,158 @@
+---
+title: 'COMPARISON OF DIFFERENT SQUID SIMULATIONS'
+author: 'Ignacio Payá, IFOP.'
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+output:
+  html_document:
+    df_print: paged
+    number_sections: yes
+    pdf_document: default
+    self_contained: yes
+    toc: yes
+    toc_float:
+      collapsed: no
+      smooth_scroll: no
+  pdf_document:
+    toc: yes
+  word_document:
+    reference_docx: MystylesAnexo.docx
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+#####
+# SUMMARY
+***
+
+This report was developed in rmakdown to compare results of different cases of Humboldt Squid Stock simulations. It collects the output files of “Run HSquid_Rmd.R” script. The parameters by cases are shown in tables and the main variables (recruitments, biomass, fishing selectivity, catches, etc.) are shown in graphs.
+
+# INTRODUCTION
+***
+
+The ‘SQUIDSIM.rmd’ rmardwon script was developed to simulate Humboldt Squid Stock dynamics using an input parameter file named HSquid_Par.csv.
+
+The ‘SQUIDSIM_RunCases_Purl.R’ R script was written to conduct different simulation by means of run ‘SQUIDSIM.rmd’ with different input parameters and to save parameters and main results in csv format file and graphs in png format files. 
+
+Therefore, it was neccesary to write a rmarkdown script to report on the different simulations outputs (‘SQUIDSIM_RunCases_Purl.R’).
+
+# METHODS
+***
+
+No calculations were done in this script. The figures and tables are read from the current folder. 
+
+The individual, population and fishery parameters are shown in tables 1 to 3.
+
+
+#####
+# RESULTS
+***
+## Table 1. Individual Parameters by case.
+```{r echo=FALSE}
+library(knitr)
+ind.pars.cases.tab=read.table("ind.pars_Cases.csv",header=TRUE,sep=",")
+colnames(ind.pars.cases.tab)[1]<-"Case"
+knitr::kable(ind.pars.cases.tab)
+```
+<br>
+
+## Table 2. Season Recruitment Parameters by case.
+```{r echo=FALSE}
+library(knitr)
+season.pars.cases.tab=read.table("season.pars_Cases.csv",header=TRUE,sep=",")
+colnames(season.pars.cases.tab)[1]<-"Case"
+knitr::kable(season.pars.cases.tab)
+```
+<br>
+
+## Table 3. Population Parameters by case.
+```{r echo=FALSE}
+library(knitr)
+popu.pars.cases.tab=read.table("popu.pars_Cases.csv",header=TRUE,sep=",")
+colnames(popu.pars.cases.tab)[1]<-"Case"
+knitr::kable(popu.pars.cases.tab)
+```
+<br>
+
+## Table 4. Fishery Parameters by case.
+```{r echo=FALSE}
+fish.pars.cases.tab=read.table("fish.pars_Cases.csv",header=TRUE,sep=",")
+colnames(fish.pars.cases.tab)[1]<-"Case"
+knitr::kable(fish.pars.cases.tab)
+```
+
+## Figure 1. N at first Month by case.
+![](Cases_ N at first Month .png)
+
+## Figure 2. Recruitment by case.
+![](Cases_ Recruits .png)
+
+## Figure 3. Stock versus Recruitment by case.
+![](CasesFig_SB_R.png)
+
+## Figure 4. Whole Biomass by case.
+![](Cases_ Biomass (tons) .png)
+
+
+## Figure 5. Spawning Biomass by case.
+![](Cases_ Spawning Biomass (tons) .png)
+
+
+## Figure 6. Fleet 1 Selectivity by case.
+![](Cases_ Fleet 1 Selectivity .png)
+
+## Figure 7. Fleet 2 Selectivity by case.
+![](Cases_ Fleet 2 Selectivity .png)
+
+## Figure 8. Fleet 3 Selectivity by case.
+![](Cases_ Fleet 3 Selectivity .png)
+
+## Figure 9. Fleet 1 Catch (tons) by case.
+![](Cases_ Fleet 1 Catch .png)
+
+## Figure 10. Fleet 2 Catch (tons) by case.
+![](Cases_ Fleet 2 Selectivity .png)
+
+## Figure 11. Fleet 3 Catch (tons) by case.
+![](Cases_ Fleet 3 Selectivity .png)
+
+## Figure 12. Whole Catch (tons) by case.
+![](Cases_ Whole Catch .png)
+
+## Figure 13. Fleet 1 CPUE by case.
+![](Cases_ CPUE 1 .png)
+
+## Figure 14. Fleet 2 CPUE by case.
+![](Cases_ CPUE 2 .png)
+
+## Figure 15. Fleet 3 CPUE by case.
+![](Cases_ CPUE 3 .png)
+
+## Figure 16. Acoustic 1 Selectivity by case.
+![](Cases_ Acoustic 1 Selectivity .png)
+
+## Figure 17. Acoustic 2 Selectivity by case.
+![](Cases_ Acoustic 2 Selectivity .png)
+
+## Figure 18. Acoustic Biomass 1 by case.
+![](Cases_ Acosutic Biomass 1 .png)
+
+## Figure 19. Acoustic Biomass 1 by case.
+![](Cases_ Acosutic Biomass 2 .png)
+
+## Figure 20. Fleet 1 Mean weight by case.
+![](Cases_ Fleet 1 Mean weight (Kg) .png)
+
+
+## Figure 21. Fleet 2 Mean weight by case.
+![](Cases_ Fleet 2 Mean weight (Kg) .png)
+
+## Figure 22. Fleet 3 Mean weight by case.
+![](Cases_ Fleet 3 Mean weight (Kg) .png)
+
+## Figure 23. Acoustic 1 Mean weight by case.
+![](Cases_ Acoustic 1 mean weight (Kg) .png)
+
+## Figure 24. Acoustic 2 Mean weight by case.
+![](Cases_ Acoustic 2 mean weight (Kg) .png)

@@ -1,0 +1,60 @@
+---
+title: "Shepherd SR model"
+author: "I Paya"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Formula taken from FLR FLCore Stock-Recruitment models.  
+
+Shepherd stock-recruitment model fit: 
+$$R = \frac{a S}{1+(\frac{S}{b})^c}$$ a represents density-independent survival (similar to a in the Ricker stock-recruit model), b the stock size above which density-dependent processes predominate over density-independent ones (also referred to as the threshold stock size), and c the degree of compensation.
+
+and with Shepherd stock-recruitment model:
+$$R_j = \frac{a SBT_{j-1}}{1+(\frac{SBT_{j-1}}{b})^c}$$ 
+
+Shepherd stock-recruitment model parameterized for steepness and virgin biomass.
+$$b = SB0 (\frac{0.2-h}{h (0.2)^c - 0.2})^ (\frac{-1.0}{c})$$
+
+$$a = \frac{1.0+(\frac{SB0}{b})^c}{SBPR}$$
+Example 1
+```{r}
+#Example
+SB0=100
+SBPR=12
+h=0.7
+c=1.8
+b=SB0*((0.2-h/(h*0.2)^c-0.2))*(-1/c)
+a=(1 + (SB0/b)^c)/SBPR
+SBT=seq(100,10000,10)
+R=SBT*0
+for(i in 2:length(SBT)){
+   R[i]=(a*SBT[i-1])/(1+(SBT[i-1]/b)^c)  
+   }
+plot(SBT[1:(length(SBT)-1)],R[2:(length(SBT))],"l")
+#a
+#b
+```
+Example 2
+```{r}
+#Example 2
+SB0=100
+SBPR=12
+h=0.7
+c=0.8
+b=SB0*((0.2-h/(h*0.2)^c-0.2))*(-1/c)
+a=(1 + (SB0/b)^c)/SBPR
+SBT=seq(100,10000,10)
+R=SBT*0
+for(i in 2:length(SBT)){
+   R[i]=(a*SBT[i-1])/(1+(SBT[i-1]/b)^c)  
+   }
+plot(SBT[1:(length(SBT)-1)],R[2:(length(SBT))],"l")
+#a
+#b
+```

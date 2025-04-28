@@ -1,0 +1,145 @@
+"","V1","V2","V3"
+"1","First Year","Fyear",2000
+"2","Last Year","Lyear",2021
+"3","Longevity","Longv",2.5
+"4","Fecundity","Fec",192410148
+"5","Natural Mortality CV","M_cv",0
+"6","Growth Model","gm",1
+"7","gm parameter 1","a_expo",309.11
+"8","gm parameter 2","b_expo",0.0029
+"9","gm parameter 3","t0",0
+"10","Growth Model CV","CVGrowth",0.05
+"11","Allometric Parameter","a",2.3067e-05
+"12","Allometric Parameter","b",3.077
+"13","Maturity Function","lm50",80
+"14","Maturity Function","lmrange",10
+"15","Seasonal Recruitment Patten","RSeason",1
+"16","RSeason Standard Deviation","SdSeason",0
+"17","Spawing Biomass","SB0",1e+07
+"18","S/R Model","SRModel",1
+"19","Steepness","h",0.6
+"20","Sd recruitment before t1","prev.rsigma",0
+"21","Recruitment Sd ","rsigma",0.1
+"22","Fleet 1 Fishing Mortality","Fref1",0.1
+"23","Fleet 1  Selectivity Par1","as1",0.15
+"24","Fleet 1  Selectivity Par2","bs1",0.5
+"25","Fleet 1  Selectivity Par3","cs1",0.15
+"26","Fleet 2 Fishing Mortality","Fref2",0.05
+"27","Fleet 2 Selectivity Par1","as2",0.15
+"28","Fleet 2 Selectivity Par2","bs2",0.9
+"29","Fleet 2 Selectivity Par3","cs2",0.15
+"30","Fleet 3 Fishing Mortality","Fref3",0.05
+"31","Fleet 3 Selectivity Par1","as3",0.2
+"32","Fleet 3 Selectivity Par2","bs3",0.7
+"33","Fleet 3 Selectivity Par3","cs3",0.15
+"34","Fleet 1 q","q1",1e-04
+"35","Fleet 1 Hyper","hyp1",0.8
+"36","Fleet 2 q","q2",0.00015
+"37","Fleet 2 Hyper","hyp2",0.9
+"38","Fleet 3 q","q3",0.00015
+"39","Fleet 3 Hyper","hyp3",0.6
+"40","Acous 1  Selectivity Par1","as4",5
+"41","Acous 1  Selectivity Par2","bs4",6
+"42","Acous 1  Selectivity Par3","cs4",500
+"43","Acous 2  Selectivity Par1","as5",6
+"44","Acous 2  Selectivity Par2","bs5",5
+"45","Acous 2  Selectivity Par3","cs5",20
+"46","Acous 1","qacous1",0.9
+"47","Acous 2","qacous2",0.5
+"48","MPH","qMPH",0.9
+"49","First Year","Fyear",2000
+"50","Last Year","Lyear",2021
+"51","Longevity","Longv",2.5
+"52","Fecundity","Fec",192410148
+"53","Natural Mortality CV","M_cv",0
+"54","Growth Model","gm",1
+"55","gm parameter 1","a_expo",309.11
+"56","gm parameter 2","b_expo",0.0029
+"57","gm parameter 3","t0",0
+"58","Growth Model CV","CVGrowth",0.05
+"59","Allometric Parameter","a",2.3067e-05
+"60","Allometric Parameter","b",3.077
+"61","Maturity Function","lm50",80
+"62","Maturity Function","lmrange",10
+"63","Seasonal Recruitment Patten","RSeason",1
+"64","RSeason Standard Deviation","SdSeason",0
+"65","Spawing Biomass","SB0",1.5e+07
+"66","S/R Model","SRModel",1
+"67","Steepness","h",0.7
+"68","Sd recruitment before t1","prev.rsigma",0
+"69","Recruitment Sd ","rsigma",0.1
+"70","Fleet 1 Fishing Mortality","Fref1",0.1
+"71","Fleet 1  Selectivity Par1","as1",0.15
+"72","Fleet 1  Selectivity Par2","bs1",0.4
+"73","Fleet 1  Selectivity Par3","cs1",0.15
+"74","Fleet 2 Fishing Mortality","Fref2",0.05
+"75","Fleet 2 Selectivity Par1","as2",0.15
+"76","Fleet 2 Selectivity Par2","bs2",1
+"77","Fleet 2 Selectivity Par3","cs2",0.15
+"78","Fleet 3 Fishing Mortality","Fref3",0.05
+"79","Fleet 3 Selectivity Par1","as3",0.5
+"80","Fleet 3 Selectivity Par2","bs3",0.7
+"81","Fleet 3 Selectivity Par3","cs3",0.15
+"82","Fleet 1 q","q1",1e-04
+"83","Fleet 1 Hyper","hyp1",0.8
+"84","Fleet 2 q","q2",0.00015
+"85","Fleet 2 Hyper","hyp2",0.9
+"86","Fleet 3 q","q3",0.00015
+"87","Fleet 3 Hyper","hyp3",0.6
+"88","Acous 1  Selectivity Par1","as4",5
+"89","Acous 1  Selectivity Par2","bs4",6
+"90","Acous 1  Selectivity Par3","cs4",500
+"91","Acous 2  Selectivity Par1","as5",6
+"92","Acous 2  Selectivity Par2","bs5",5
+"93","Acous 2  Selectivity Par3","cs5",20
+"94","Acous 1","qacous1",0.9
+"95","Acous 2","qacous2",0.5
+"96","MPH","qMPH",0.9
+"97","First Year","Fyear",2000
+"98","Last Year","Lyear",2021
+"99","Longevity","Longv",2.5
+"100","Fecundity","Fec",192410148
+"101","Natural Mortality CV","M_cv",0
+"102","Growth Model","gm",1
+"103","gm parameter 1","a_expo",309.11
+"104","gm parameter 2","b_expo",0.0029
+"105","gm parameter 3","t0",0
+"106","Growth Model CV","CVGrowth",0.05
+"107","Allometric Parameter","a",2.3067e-05
+"108","Allometric Parameter","b",3.077
+"109","Maturity Function","lm50",80
+"110","Maturity Function","lmrange",10
+"111","Seasonal Recruitment Patten","RSeason",1
+"112","RSeason Standard Deviation","SdSeason",0
+"113","Spawing Biomass","SB0",1.5e+07
+"114","S/R Model","SRModel",2
+"115","Steepness","h",0.5
+"116","Sd recruitment before t1","prev.rsigma",0
+"117","Recruitment Sd ","rsigma",0.1
+"118","Fleet 1 Fishing Mortality","Fref1",0.1
+"119","Fleet 1  Selectivity Par1","as1",0.15
+"120","Fleet 1  Selectivity Par2","bs1",0.7
+"121","Fleet 1  Selectivity Par3","cs1",0.15
+"122","Fleet 2 Fishing Mortality","Fref2",0.05
+"123","Fleet 2 Selectivity Par1","as2",0.15
+"124","Fleet 2 Selectivity Par2","bs2",0.9
+"125","Fleet 2 Selectivity Par3","cs2",0.1
+"126","Fleet 3 Fishing Mortality","Fref3",0.05
+"127","Fleet 3 Selectivity Par1","as3",0.2
+"128","Fleet 3 Selectivity Par2","bs3",0.7
+"129","Fleet 3 Selectivity Par3","cs3",0.15
+"130","Fleet 1 q","q1",1e-04
+"131","Fleet 1 Hyper","hyp1",0.8
+"132","Fleet 2 q","q2",0.00015
+"133","Fleet 2 Hyper","hyp2",0.9
+"134","Fleet 3 q","q3",0.00015
+"135","Fleet 3 Hyper","hyp3",0.6
+"136","Acous 1  Selectivity Par1","as4",5
+"137","Acous 1  Selectivity Par2","bs4",6
+"138","Acous 1  Selectivity Par3","cs4",500
+"139","Acous 2  Selectivity Par1","as5",6
+"140","Acous 2  Selectivity Par2","bs5",5
+"141","Acous 2  Selectivity Par3","cs5",20
+"142","Acous 1","qacous1",0.9
+"143","Acous 2","qacous2",0.5
+"144","MPH","qMPH",0.9
